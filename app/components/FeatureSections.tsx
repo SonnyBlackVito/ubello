@@ -15,10 +15,10 @@ export function NonCustodialSection() {
       <div className="relative max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
-            <h2 className="text-4xl sm:text-3xl lg:text-7xl font-bold text-ubello-purple">
+            <h2 className="text-4xl sm:text-3xl lg:text-6xl font-bold text-ubello-purple">
               Non-custodial
             </h2>
-            <p className="text-3xl lg:text-3xl sm:text-xl text-gray-700 leading-relaxed max-w-xl">
+            <p className="text-xl lg:text-xl sm:text-xl text-gray-700 leading-relaxed max-w-xl">
               Users retain full control of their assets at all times, ensuring
               maximum security and true ownership.
             </p>
@@ -174,7 +174,7 @@ export function PaymentServicesSection() {
 
             <p
               className="
-              text-base sm:text-lg md:text-xl lg:text-2xl 
+              text-base sm:text-lg md:text-xl lg:text-xl 
               text-ubello-dark leading-relaxed 
               max-w-xl mx-auto lg:mx-0
             ">
@@ -228,7 +228,7 @@ export function WatchVideosSection() {
                 sm:text-4xl 
                 md:text-5xl 
                 lg:text-6xl 
-                xl:text-7xl 
+                xl:text-6xl 
                 font-roboto font-bold 
                 text-ubello-purple 
                 leading-tight
@@ -299,7 +299,7 @@ export function EarnRewardsSection() {
             <h2 className="text-5xl sm:text-4xl lg:text-[44px] max-w-2xl  font-roboto font-bold text-ubello-purple">
               Earn rewards through in-app activities
             </h2>
-            <p className="text-4xl text-left sm:text-xl lg:text-[24px] text-gray-700 leading-relaxed max-w-2xl">
+            <p className="text-4xl text-left sm:text-xl lg:text-xl text-gray-700 leading-relaxed max-w-2xl">
               Get incentives from various actions such as staking, earning
               programs, and self-managed transfers.
             </p>
