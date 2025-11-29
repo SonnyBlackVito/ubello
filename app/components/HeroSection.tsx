@@ -28,7 +28,6 @@ export const DownloadButton = () => (
     className=" 
   w-full sm:w-auto
    p-0.5 rounded-xl
-
   bg-[linear-gradient(90deg,#9DBFFF,#FFB7FF)]">
     <button
       className="flex items-center justify-center gap-2.5 sm:gap-3 

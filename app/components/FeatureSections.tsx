@@ -29,7 +29,7 @@ export function NonCustodialSection() {
               alt="Non-custodial wallet"
               width={2000}
               height={2000}
-              className="w-full h-auto object-contain rounded-2xl shadow-xl"
+              className="w-full h-auto object-contain "
             />
           </div>
         </div>
@@ -146,8 +146,8 @@ export function PaymentServicesSection() {
                 height={850}
                 className="
                   relative 
-                  w-[260px] sm:w-[350px] md:w-[420px] lg:w-[500px]
-                  h-auto lg:h-[750px]
+                  w-[260px] sm:w-[350px] md:w-[420px] lg:w-[750px]
+                  h-auto lg:h-[700px]
                   drop-shadow-2xl 
                   z-20 
                   mx-auto
@@ -295,11 +295,11 @@ export function EarnRewardsSection() {
               className="w-full h-[760px] object-contain"
             />
           </div>
-          <div className="space-y-8 mx-auto text-center order-1 lg:order-2">
-            <h2 className="text-5xl sm:text-6xl lg:text-[60px] max-w-2xl  font-roboto font-bold text-ubello-purple">
+          <div className="space-y-6 mx-auto text-center order-1 lg:order-2">
+            <h2 className="text-5xl sm:text-4xl lg:text-[44px] max-w-2xl  font-roboto font-bold text-ubello-purple">
               Earn rewards through in-app activities
             </h2>
-            <p className="text-4xl sm:text-xl lg:text-[32px] text-gray-700 leading-relaxed max-w-xl">
+            <p className="text-4xl text-left sm:text-xl lg:text-[24px] text-gray-700 leading-relaxed max-w-2xl">
               Get incentives from various actions such as staking, earning
               programs, and self-managed transfers.
             </p>
