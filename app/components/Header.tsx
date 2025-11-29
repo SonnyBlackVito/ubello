@@ -55,7 +55,7 @@ export default function Header() {
               }
               before:absolute before:inset-0 
               before:rounded-2xl sm:before:rounded-[22px] md:before:rounded-[26px]
-              before:bg-gradient-to-b before:from-white/20 before:to-white/5
+              before:bg-linear-to-b before:from-white/20 before:to-white/5
               before:pointer-events-none
               after:absolute after:inset-0 
               after:rounded-2xl sm:after:rounded-[22px] md:after:rounded-[26px]
@@ -116,7 +116,7 @@ export default function Header() {
                 rounded-xl 
                 hover:bg-white/10 
                 active:scale-95
-                min-w-[44px] min-h-[44px]
+                min-w-11 min-h-11
                 flex items-center justify-center
               ">
               <svg
@@ -168,7 +168,7 @@ export default function Header() {
                     shadow-[0_10px_40px_-10px_rgba(0,0,0,0.4)]
                     before:absolute before:inset-0 
                     before:rounded-2xl sm:before:rounded-[22px] md:before:rounded-[26px]
-                    before:bg-gradient-to-b before:from-white/20 before:to-white/5
+                    before:bg-linear-to-b before:from-white/20 before:to-white/5
                     before:pointer-events-none
                     after:absolute after:inset-0 
                     after:rounded-2xl sm:after:rounded-[22px] md:after:rounded-[26px]
