@@ -359,7 +359,7 @@ export default function HeroSection() {
                 priority
                 quality={100}
                 className="
-            w-full h-full object-contain 
+            w-full h-full object-cover
             drop-shadow-2xl
             scale-90 sm:scale-95 lg:scale-100
           "
