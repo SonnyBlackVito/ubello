@@ -16,36 +16,34 @@ export default function Footer() {
           </div>
 
           {/* Navigation links */}
-          <nav
-            className="    flex flex-col 
-    items-center justify-center 
-    sm:flex-row sm:justify-center sm:items-center
-    gap-6 sm:gap-12
-">
-            <a
-              href="#courses"
-              className="text-white hover:text-white transition-colors text-sm font-medium">
-              Courses
-            </a>
-            <a
-              href="#experts"
-              className="text-white hover:text-white transition-colors text-sm font-medium">
-              Experts
-            </a>
+          <nav className="    flex flex-col items-center justify-center sm:flex-row sm:justify-center sm:items-center gap-6 sm:gap-12">
             <a
               href="#about"
               className="text-white hover:text-white transition-colors text-sm font-medium">
               About us
             </a>
             <a
-              href="#certificates"
+              href="#contact"
               className="text-white hover:text-white transition-colors text-sm font-medium">
-              Certificates
+              Contacts
+            </a>
+            <a
+              href="/terms-of-use"
+              // target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-white transition-colors text-sm font-medium">
+              Terms of use
+            </a>
+
+            <a
+              href="#contact"
+              className="text-white hover:text-white transition-colors text-sm font-medium">
+              Privacy Policy
             </a>
             <a
               href="#contact"
               className="text-white hover:text-white transition-colors text-sm font-medium">
-              Contacts
+              Documentation
             </a>
           </nav>
         </div>

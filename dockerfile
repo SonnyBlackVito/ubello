@@ -1,38 +1,32 @@
-# # Stage 1: Dependencies
-# FROM oven/bun:latest AS deps
-# WORKDIR /app
+FROM node:20-alpine AS builder
+WORKDIR /app
 
-# # Install system dependencies if required (e.g., for image optimization)
-# # RUN apt-get update && apt-get install -y <package-name>
+# Copy package files
+COPY package*.json ./
+COPY .env.example .env
 
-# COPY package.json bun.lockb ./
-# RUN bun install --frozen-lockfile
+# Install dependencies
+RUN yarn install --frozen-lockfile
 
-# # Stage 2: Builder
-# FROM oven/bun:latest AS builder
-# WORKDIR /app
 
-# COPY --from=deps /app/node_modules ./node_modules
-# COPY . .
+# Copy source code
+COPY . .
 
-# # Ensure Next.js output is standalone
-# # Add this to your next.config.js:
-# # module.exports = {
-# #   output: 'standalone',
-# # }
-# RUN bun run build
+# Build Next.js
+RUN yarn run build
 
-# # Stage 3: Runner
-# FROM oven/bun:latest AS runner
-# WORKDIR /app
+FROM oven/bun:1.2.23-alpine AS runner
+WORKDIR /app
 
-# ENV NODE_ENV production
+ENV NODE_ENV=production
+ENV PORT=3000
 
-# # Copy the standalone build output
-# COPY --from=builder /app/.next/standalone ./
-# COPY --from=builder /app/.next/static ./.next/static
-# COPY --from=builder /app/public ./public
+# Copy files cần thiết
+COPY --from=builder /app/.next/standalone ./
+COPY --from=builder /app/.next/static ./.next/static
+COPY --from=builder /app/public ./public
+COPY --from=builder /app/.env ./.env
 
-# EXPOSE 3000
+EXPOSE 3000
 
-# CMD ["bun", "run", "start"]
+CMD ["bun", "run", "server.js"]

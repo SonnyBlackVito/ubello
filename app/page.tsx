@@ -1,5 +1,3 @@
-import Header from "./components/Header";
-import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import {
   EarnRewardsSection,
@@ -8,7 +6,6 @@ import {
   WatchVideosSection,
 } from "./components/FeatureSections";
 import BannerSection from "./components/BannerSection";
-import ScrollTriggered from "./components/PhoneSection";
 import ScrollAnimationPhone from "./components/ScrollAnimationPhone";
 
 export default function Home() {
