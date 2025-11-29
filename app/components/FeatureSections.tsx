@@ -282,11 +282,27 @@ export function EarnRewardsSection() {
         backgroundImage: "url('/images/background_earn.png')",
         backgroundSize: "cover",
       }}
-      className="w-full  px-4 sm:px-6 lg:px-8  relative overflow-hidden">
-      {" "}
-      <div className="relative max-w-full mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="">
+      className="w-full px-4 sm:px-8 lg:px-8 relative overflow-hidden">
+      <div className="relative max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 lg:gap-16 items-center">
+          {/* TEXT FIRST ON MOBILE */}
+          <div className="order-1 lg:order-2 space-y-6 mx-auto text-left pt-10 mb-10 lg:mb-0">
+            <h2
+              className="                text-2xl 
+                sm:text-4xl 
+                md:text-5xl 
+                lg:text-6xl 
+                xl:text-6xl  max-w-2xl font-roboto font-bold text-ubello-purple">
+              Earn rewards through in-app activities
+            </h2>
+            <p className="text-xl sm:text-sm lg:text-xl text-gray-700 leading-relaxed max-w-2xl">
+              Get incentives from various actions such as staking, earning
+              programs, and self-managed transfers.
+            </p>
+          </div>
+
+          {/* IMAGE SECOND ON MOBILE */}
+          <div className="order-2 lg:order-1">
             <Image
               src="/images/earn_rewards.png"
               alt="Earn rewards"
@@ -294,15 +310,6 @@ export function EarnRewardsSection() {
               height={760}
               className="w-full h-[760px] object-contain"
             />
-          </div>
-          <div className="space-y-6 mx-auto text-center order-1 lg:order-2">
-            <h2 className="text-5xl sm:text-4xl lg:text-[44px] max-w-2xl  font-roboto font-bold text-ubello-purple">
-              Earn rewards through in-app activities
-            </h2>
-            <p className="text-4xl text-left sm:text-xl lg:text-xl text-gray-700 leading-relaxed max-w-2xl">
-              Get incentives from various actions such as staking, earning
-              programs, and self-managed transfers.
-            </p>
           </div>
         </div>
       </div>
