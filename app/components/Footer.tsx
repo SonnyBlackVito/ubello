@@ -36,7 +36,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="#contact"
+              href="/privacy-policy"
               className="text-white hover:text-white transition-colors text-sm font-medium">
               Privacy Policy
             </a>
